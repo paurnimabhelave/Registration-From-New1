@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form New</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <p>Fill out the form with the required details</p>
+      <form method="post" action='https://register-demo.freecodecamp.org'>
+          <fieldset>
+              <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required></label>
+              <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required></label>
+              <label for="email">Email: <input id="Email" name="Email" type="Email" required></label>
+              <label for="Mobile Number">Password: <input id="Mobile Number" name="Mobile Number" type="Number" pattern="[a-z0-5]{8,}" required></label>
+          </fieldset>
+          <fieldset>
+              <legend>Account Type</legend>
+              <label><input type="radio" name="account-type" value="personal" checked> Personal</label>
+              <label><input type="radio" name="account-type" value="business"> Business</label>
+          </fieldset>
+          <fieldset>
+              <label for="profile-picture">Profile Picture: <input id="profile-picture" type="file" name="file"></label>
+              <label for="age">Age: <input id="age" type="number" name="age" min="13" max="120"></label>
+              <label for="referrer">How did you hear about us?
+                  <select id="referrer" name="referrer">
+                      <option value="">(select one)</option>
+                      <option value="1">Friend</option>
+                      <option value="2">Advertisement</option>
+                      <option value="3">Social Media</option>
+                      <option value="4">Other</option>
+                  </select>
+              </label>
+              <label for="bio">Bio: <textarea id="bio" name="bio" rows="3" placeholder="Tell us about yourself..."></textarea></label>
+          </fieldset>
+          <label class="terms">
+              <input type="checkbox" required> I accept the <a href="#" style="color: blue;">terms and conditions</a>
+          </label>
+          <input type="submit" value="Register">
+      </form>
+  </div>
+</body>
+</html>
